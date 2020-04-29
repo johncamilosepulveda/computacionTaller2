@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="520" started-at="2020-03-30T23:33:31 COT" finished-at="2020-03-30T23:33:32 COT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="520" started-at="2020-03-30T23:33:31 COT" finished-at="2020-03-30T23:33:32 COT">
+      <class name="com.icesi.edu.co.jcss.test.TestServiceGame">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.icesi.edu.co.jcss.test.TestServiceGame@27a5f880]" name="setUp" is-config="true" duration-ms="434" started-at="2020-03-30T23:33:31 COT" finished-at="2020-03-30T23:33:32 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createGameA()[pri:0, instance:com.icesi.edu.co.jcss.test.TestServiceGame@27a5f880]" name="createGameA" duration-ms="14" started-at="2020-03-30T23:33:32 COT" finished-at="2020-03-30T23:33:32 COT">
+          <exception class="com.icesi.edu.co.jcss.exceptions.ExceptionNotCreateGame">
+            <message>
+              <![CDATA[Recibe tema pero este no existe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.icesi.edu.co.jcss.exceptions.ExceptionNotCreateGame: Recibe tema pero este no existe
+at com.icesi.edu.co.jcss.services.ServiceGameImpl.saveGame(ServiceGameImpl.java:26)
+at com.icesi.edu.co.jcss.test.TestServiceGame.createGameA(TestServiceGame.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.icesi.edu.co.jcss.exceptions.ExceptionNotCreateGame -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createGameA -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.icesi.edu.co.jcss.test.TestServiceGame@27a5f880]" name="setUp" is-config="true" duration-ms="0" started-at="2020-03-30T23:33:32 COT" finished-at="2020-03-30T23:33:32 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createGameB()[pri:0, instance:com.icesi.edu.co.jcss.test.TestServiceGame@27a5f880]" name="createGameB" duration-ms="20" started-at="2020-03-30T23:33:32 COT" finished-at="2020-03-30T23:33:32 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createGameB -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.icesi.edu.co.jcss.test.TestServiceGame@27a5f880]" name="setUp" is-config="true" duration-ms="1" started-at="2020-03-30T23:33:32 COT" finished-at="2020-03-30T23:33:32 COT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createGameC()[pri:0, instance:com.icesi.edu.co.jcss.test.TestServiceGame@27a5f880]" name="createGameC" duration-ms="1" started-at="2020-03-30T23:33:32 COT" finished-at="2020-03-30T23:33:32 COT">
+          <exception class="com.icesi.edu.co.jcss.exceptions.ExceptionNotCreateGame">
+            <message>
+              <![CDATA[El juego es null.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.icesi.edu.co.jcss.exceptions.ExceptionNotCreateGame: El juego es null.
+at com.icesi.edu.co.jcss.services.ServiceGameImpl.saveGame(ServiceGameImpl.java:32)
+at com.icesi.edu.co.jcss.test.TestServiceGame.createGameC(TestServiceGame.java:87)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.icesi.edu.co.jcss.exceptions.ExceptionNotCreateGame -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createGameC -->
+      </class> <!-- com.icesi.edu.co.jcss.test.TestServiceGame -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
