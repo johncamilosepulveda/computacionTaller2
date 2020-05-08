@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Add Story</title>
+<title>Add Topic</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -17,49 +17,42 @@
 </head>
 <body>
 	<div class="container my-5">
-		<h2 class="mb-5">Crear Nueva Historia</h2>
+		<h2 class="mb-5">Crear Nuevo Tema</h2>
 		<div class="row">
 			<div class="col-md-6">
-				<form action="#" th:action="@{/stories/add/}"
-					th:object="${TsscStory}" method="post">
+				<form action="#" th:action="@{/topics/add/}" th:object="${TsscTopic}"
+					method="post">
 					<div class="row">
 
 						<div class="form-group col-md-6">
-							<label for="id" class="col-form-label">Id de la Historia</label>
-							<input type="text" th:field="*{id}" class="form-control" id="id"
-								placeholder="id">
+							<label for="name" class="col-form-label">Nombre del Tema</label> <input
+								type="text" th:field="*{name}" class="form-control" id="name"
+								placeholder="name">
 						</div>
 						<div class="form-group col-md-6">
-							<label for="businessValue" class="col-form-label">Valor
-								del Negocio</label> <input type="text" th:field="*{businessValue}"
-								class="form-control" id="businessValue"
-								placeholder="businessValue">
+							<label for="description" class="col-form-label">Descripción del Tema</label> <input
+								type="text" th:field="*{description}" class="form-control" id="description"
+								placeholder="description"> 
 						</div>
+						
 						<div class="form-group col-md-6">
-							<label for="description" class="col-form-label">Descripción
-								de la Historia</label> <input type="text" th:field="*{description}"
-								class="form-control" id="description" placeholder="description">
+							<label for="defaultGroups" class="col-form-label">Número de Grupos por defecto</label> <input
+								type="text" th:field="*{defaultGroups}" class="form-control" id="defaultGroups"
+								placeholder="defaultGroups">
 						</div>
-
+						
 						<div class="form-group col-md-6">
-							<label for="initialSprint" class="col-form-label">Sprint
-								Inicial</label> <input type="text" th:field="*{initialSprint}"
-								class="form-control" id="initialSprint"
-								placeholder="initialSprint">
+							<label for="defaultSprints" class="col-form-label">Número de Sprints por defecto</label> <input
+								type="text" th:field="*{defaultSprints}" class="form-control" id="defaultSprints"
+								placeholder="defaultSprints">
 						</div>
-
+						
 						<div class="form-group col-md-6">
-							<label for="number" class="col-form-label">Número de
-								Historia</label> <input type="text" th:field="*{number}"
-								class="form-control" id="number" placeholder="number">
+							<label for="groupPrefix" class="col-form-label">Prefijo para grupos</label> <input
+								type="text" th:field="*{groupPrefix}" class="form-control" id="groupPrefix"
+								placeholder="groupPrefix">
 						</div>
-
-						<div class="form-group col-md-6">
-							<label for="priority" class="col-form-label">Prioridad</label> <input
-								type="text" th:field="*{priority}" class="form-control"
-								id="priority" placeholder="priority">
-						</div>
-
+						
 						<div></div>
 					</div>
 					<div class="row">
