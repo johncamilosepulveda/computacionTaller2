@@ -1,5 +1,7 @@
 package com.icesi.edu.co.jcss.services;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -63,6 +65,21 @@ public class ServiceGameImpl implements IServiceGame {
 		}
 
 		return receive;
+	}
+
+	public void delete(TsscGame game) {
+		iRepositoryGame.delete(game);
+		
+	}
+	
+	@Override
+	public Optional<TsscGame> findById(int id) {
+		return iRepositoryGame.findById(id);
+	}
+
+	@Override
+	public Iterable<TsscGame> findAll() {
+		return iRepositoryGame.findAll();
 	}
 
 }

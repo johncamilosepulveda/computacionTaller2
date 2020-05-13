@@ -1,8 +1,11 @@
 package com.icesi.edu.co.jcss.repositories;
 
+import org.springframework.data.repository.CrudRepository;
+
 import com.icesi.edu.co.jcss.model.TsscGame;
 
-public interface IRepositoryGame {
+
+public interface IRepositoryGame extends CrudRepository<TsscGame, Integer>{
 	
 	public void create(TsscGame game, Integer id);
 

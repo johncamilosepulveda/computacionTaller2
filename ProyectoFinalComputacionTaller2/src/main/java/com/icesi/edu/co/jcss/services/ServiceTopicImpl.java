@@ -1,9 +1,12 @@
 package com.icesi.edu.co.jcss.services;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.icesi.edu.co.jcss.exceptions.ExceptionNotCreateTopic;
+import com.icesi.edu.co.jcss.model.TsscGame;
 import com.icesi.edu.co.jcss.model.TsscTopic;
 import com.icesi.edu.co.jcss.repositories.IRepositoryTopic;
 
@@ -42,5 +45,21 @@ public class ServiceTopicImpl implements IServiceTopic{
 		}
 		
 	}
+	
+	@Override
+	public Optional<TsscTopic> findById(int id) {
+		return iRepositoryTopic.findById(id);
+	}
+
+	@Override
+	public Iterable<TsscTopic> findAll() {
+		return iRepositoryTopic.findAll();
+	}
+
+	@Override
+	public void delete(TsscTopic topic) {
+		iRepositoryTopic.delete(topic);
+	}
+
 
 }

@@ -3,15 +3,15 @@ package com.icesi.edu.co.jcss.services;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.icesi.edu.co.jcss.model.TsscAdmin;
-import com.icesi.edu.co.jcss.repositories.RepositoryAdminImpl;
+import com.icesi.edu.co.jcss.repositories.IRepositoryAdmin;
 
 
 public class ServiceAdminImpl implements IServiceAdmin{
 
-	private RepositoryAdminImpl adminRepository;
+	private IRepositoryAdmin adminRepository;
 
 	@Autowired
-	public ServiceAdminImpl(RepositoryAdminImpl adminRepository) {
+	public ServiceAdminImpl(IRepositoryAdmin adminRepository) {
 		this.adminRepository = adminRepository;
 	}
 	
